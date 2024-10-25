@@ -43,6 +43,7 @@ def heapify_down(heap: MaxHeap, index: int) -> MaxHeap:
         return heap  # No swap needed, return the heap as is
 
 def extract_max(heap: MaxHeap) -> tuple[MaxHeap, int]:
+    #rename to extract_min
     if not heap.data:
         raise ValueError("Heap is empty")
 
